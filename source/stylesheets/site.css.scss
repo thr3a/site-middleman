@@ -17,6 +17,7 @@ body {
   background-color: #282c37;
   color: #fff;
   width: 20%;
+  min-width: 6rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,13 +25,19 @@ body {
 
 #right-area {
   width: 80%;
-  font-size: 30px;
+  font-size: 1.2rem;
+  .fa {
+    font-size: 2rem;
+  }
   ul {
     list-style:none;
-    margin-left: 50px;
-    margin-top: 80px;
+    margin-left: 2rem;
+    margin-top: 5rem;
+    li {
+      margin-bottom: 1rem;
+    }
   }
-  a{
+  a {
     text-decoration: none;
     display: inline-block;
     transition: .3s;

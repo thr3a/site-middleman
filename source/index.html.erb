@@ -1,13 +1,39 @@
 ---
 title: turai.work
 ---
+<%
+links = [
+  {
+    name: 'Twitter',
+    icon: 'fa-twitter',
+    url: 'https://twitter.com/amanekey'
+  },
+  {
+    name: 'Github',
+    icon: 'fa-github',
+    url: 'https://github.com/thr3a'
+  },
+  {
+    name: 'Qiita',
+    icon: 'fa-book',
+    url: 'http://qiita.com/thr3a'
+  },
+  {
+    name: 'Blog',
+    icon: 'fa-rss',
+    url: 'http://thr3a.hatenablog.com/'
+  }
+]
+%>
 <div id="wrapper">
   <div id="left-area">
     <span id="title">turai.work</span>
   </div>
   <div id="right-area">
     <ul>
-      <li><a href="/"><i class="fa fa-twitter fa-fw"></i>Twitter</a></li>
+      <% links.each do |link| %>
+        <li><a href="<%= link[:url] %>" target="_blank"><i class="fa <%= link[:icon] %> fa-fw"></i><%= link[:name] %></a></li>
+      <% end %>
     </ul>
   </div>
 </div>
