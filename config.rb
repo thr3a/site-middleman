@@ -1,6 +1,14 @@
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
 
+activate :s3_sync do |s3_sync|
+  s3_sync.bucket = 'turai.work'
+  s3_sync.region = 'us-east-1'
+  s3_sync.aws_access_key_id = ENV['AWS_ACCESS_KEY_ID']
+  s3_sync.aws_secret_access_key = ENV['AWS_SECRET_ACCESS_KEY']
+end
+
+
 activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
