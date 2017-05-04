@@ -1,24 +1,54 @@
+html {
+  height: 100%;
+}
+
 body {
-  background-color: #fbc547;
-  color: #333;
-  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
-    "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
-    "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
-    "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
-  padding: 18vh 1rem;
-  text-align: center;
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
-a {
-  color: rgba(#000, 0.7);
+#wrapper {
+  display: flex;
+  height: 100%;
+}
 
-  &:focus,
-  &:hover {
-    color: rgba(#000, 0.6);
+#left-area {
+  background-color: #282c37;
+  color: #fff;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#right-area {
+  width: 80%;
+  font-size: 30px;
+  ul {
+    list-style:none;
+    margin-left: 50px;
+    margin-top: 80px;
   }
-}
-
-.middleman-logo {
-  margin-bottom: 1rem;
-  width: 10rem;
+  a{
+    text-decoration: none;
+    display: inline-block;
+    transition: .3s;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    &:link {
+      color: #000;
+    }
+    &:visited {
+      color: #000;
+    }
+    &:hover {
+      color: #000;
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+    &:active {
+      color: #000;
+    }
+  }
 }
