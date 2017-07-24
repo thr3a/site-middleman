@@ -26,13 +26,15 @@ links = [
 ]
 %>
 <div id="wrapper">
-  <div id="left-area">
-    <span id="title">turai.work</span>
-  </div>
-  <div id="right-area">
+  <div>
+    <h2>turai.work</h2>
     <ul>
       <% links.each do |link| %>
-        <li><a href="<%= link[:url] %>" target="_blank"><i class="fa <%= link[:icon] %> fa-fw"></i><%= link[:name] %></a></li>
+        <li>
+          <a href="<%= link[:url] %>" target="_blank">
+            <i class="fa <%= link[:icon] %> fa-fw"></i><%= link[:name] %>
+          </a>
+        </li>
       <% end %>
     </ul>
   </div>
