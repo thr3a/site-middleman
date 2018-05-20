@@ -8,6 +8,7 @@
 #   s3_sync.aws_secret_access_key = ENV['AWS_SECRET_ACCESS_KEY']
 # end
 
+set :build_dir, 'docs'
 
 activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
